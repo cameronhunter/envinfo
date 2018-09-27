@@ -5,7 +5,7 @@ const argv = require('minimist')(process.argv.slice(2));
 argv.console = true;
 
 if (argv.help || argv._.indexOf('help') > -1) {
-  // eslint-disable-next-line
+  // eslint-disable-next-line no-console
   console.log(`
   ,,',                                  ,,             ,,,,,,           ,',,
  ,,,                                                  ,,,                  ,,,
@@ -47,6 +47,7 @@ if (argv.help || argv._.indexOf('help') > -1) {
   `);
   process.exit(0);
 } else if (argv.version || argv.v || argv._.indexOf('version') > -1) {
+  // eslint-disable-next-line no-console
   console.log(packageJson.version);
   process.exit(0);
 }
