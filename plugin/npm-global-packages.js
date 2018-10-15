@@ -1,7 +1,7 @@
 const glob = require('glob');
 const path = require('path');
 
-module.exports = utils => (packages, options) => ({
+module.exports = (utils, options, packages) => ({
   name: 'Global npm packages',
 
   get info() {

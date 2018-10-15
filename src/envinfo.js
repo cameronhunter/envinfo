@@ -31,9 +31,18 @@ function format(data, options) {
 }
 
 function main(props, options) {
+
+
+  
   options = options || {};
+
+
+
   // set props to passed in props or default to presets.defaults
   const defaults = Object.keys(props).length > 0 ? props : presets.defaults;
+
+
+
   // collect a list of promises of helper functions
   const promises = Object.entries(defaults).reduce((acc, entries) => {
     const category = entries[0];

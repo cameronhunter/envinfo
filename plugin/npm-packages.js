@@ -1,6 +1,6 @@
 const path = require('path');
 
-module.exports = utils => (packages, options) => ({
+module.exports = (utils, options, packages) => ({
   name: 'npm packages',
 
   get info() {
